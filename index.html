@@ -1,22 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UStudy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Welcome to UStudy
-      </h1>
-      <p class="subtitle">
-        Please create a profile
-      </p>
-    </div>
-  </section>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello UStudy!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script defer src = "js/index.js"></script>
+    </head>
+    <body>
+        <section class="section">
+          <div class="container">
+            <h1 class="title">Welcome!</h1>
+            <h2 class="subtitle">
+              Enter your login info below.
+            </h2>
+          </div>
+        </section>
+
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
+          
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+          
+          <div class="select">
+                <select>
+                  <option>Select your school</option>
+                  <option>Columbia University in the City of New York</option>
+                </select>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" onclick=location.href="createAnAccountPage.html" type="button">
+                </button>">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+
+
+          <div class="tile is-ancestor" id="navigation"> 
+                <div class="tile">
+                    <div class="tile is-parent">
+                            <article class="tile is-child notification">
+                            <div class="content">
+                                    <div class="columns" id="lowest-bar">
+                                            <div class="column">
+                                                <a id="profile-page" class="icon" href="profile.html"><i class="fas fa-user-alt"></i></a>
+                                            </div>
+                                            <div class="column">
+                                                    <a id="find-students-page" class="icon" href="find-students.html"><i class="fas fa-users"></i></a>
+                                                </div>
+                                            <div class="column">
+                                                <a id="calendar-page" class="icon" href="home.html"><i class="fas fa-calendar-alt"></i></a>
+                                            </div>
+                                            <div class="column">
+                                                <a id="add-page" class="icon" href="event.html"><i class="fas fa-plus-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </article>
+                        </div>
+                </div>
+            </div>
+      </body>
 </html>
