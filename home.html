@@ -6,8 +6,10 @@
     <title>UStudy</title>
     <link href="css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
     <script src="js/home.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
   </head>
   <body>
   <section class="section">
@@ -18,21 +20,54 @@
       <p class="subtitle">
         Happy studying!
       </p>
-      <div class="columns" id="lowest-bar">
-            <div class="column">
-                <a id="profile-page" class="icon" href="profile.html"><i class="fas fa-user-alt"></i></a>
+      <div id="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=columbia.edu_arnhlsgdbs1ocfl9941u9k76q8%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+        <div class="tile is-ancestor">
+            <div class="tile">
+                <div class="tile is-parent">
+                        <article class="tile is-child notification">
+                        <div class="content">
+                                <div class="columns" id="lowest-bar">
+                                        <div class="column">
+                                            <a id="profile-page" class="icon" href="profile.html"><i class="fas fa-user-alt"></i></a>
+                                        </div>
+                                        <div class="column">
+                                                <a id="find-students-page" class="icon" href=""><i class="fas fa-users"></i></a>
+                                            </div>
+                                        <div class="column">
+                                            <a id="calendar-page" class="icon" href=""><i class="fas fa-calendar-alt"></i></a>
+                                        </div>
+                                        <div class="column">
+                                            <a id="add-page" class="icon" href="event.html"><i class="fas fa-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </article>
+                    </div>
             </div>
-            <div class="column">
-                    <a id="find-students-page" class="icon" href=""><i class="fas fa-users"></i></a>
-                </div>
-            <div class="column">
-                <a id="calendar-page" class="icon" href=""><i class="fas fa-calendar-alt"></i></a>
-            </div>
-            <div class="column">
-                <a id="add-page" class="icon" href="event.html"><i class="fas fa-plus-circle"></i></a>
-            </div>
-          </div>
-    </div>
+        </div>
   </section>
   </body>
 </html>
+
+<style>
+#lowest-bar{
+    height: 50%
+}
+
+.icon {
+    color: hsl(0, 0%, 21%);
+    height: 100%;
+}
+
+body {
+    text-align: center
+}
+
+#calendar {
+    margin-bottom: 5%;
+}
+
+</style>
