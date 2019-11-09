@@ -1,13 +1,16 @@
-.lowest {
-    position: absolute; 
-    bottom: 5px;
-    color: purple;
+#lowest-bar{
+    height: 50%
 }
 
-#first-name{
-    background-color: green
+.icon {
+    color: hsl(0, 0%, 21%);
+    height: 100%;
 }
 
-body{
-    background-color: green;
+body {
+    text-align: center;
+}
+
+#calendar {
+    margin-bottom: 5%;
 }
