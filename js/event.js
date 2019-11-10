@@ -1,3 +1,3 @@
 function submit() {
-    alert("fuck you");
+    alert("Event submission for the form is a work-in-progress.");
 }
