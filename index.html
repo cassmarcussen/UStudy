@@ -22,7 +22,7 @@
         <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Firstname Lastname" value="">
+              <input id="name" class="input" type="text" placeholder="Firstname Lastname" value="">
             </div>
           </div>
           
@@ -46,6 +46,7 @@
             </div>
           </div>
           
+          <label class="label">School</label>
           <div class="select" >
                 <select>
                   <option>Select your school</option>
@@ -60,7 +61,7 @@
           <p class="invisible">-----</p>
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-link" onclick=location.href="home.html" type="button">
+              <button class="button is-link" onclick="submitForm()" type="button">
                 Submit</button>
             </div>
             <div class="control">
@@ -99,12 +100,3 @@
       </body>
 </html>
 
-<script>
-function clearInput(){
-    var inputs = document.getElementsByClassName("input");
-    var i;
-    for (i = 0; i < inputs.length; i++) {
-        inputs[i].value = "";
-    }
-}
-</script>
