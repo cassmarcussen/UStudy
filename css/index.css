@@ -5,3 +5,7 @@ body{
 #navigation {
     text-align: center;
 }
+
+.invisible {
+    color: white;
+}
